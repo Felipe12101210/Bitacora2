@@ -2,17 +2,17 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   max-width: 30em;
   margin: 20px auto;
-  padding: 10px;
+  padding: 20px;
   border: 2px solid rgb(0, 82, 126);
   border-radius: 16px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
-  background-color: #fdfdfd;
+  background: linear-gradient(to bottom, #ffffff, #e2d4f5);
 }
 
-/* Línea vertical central */
+/* Línea central */
 .timeline-container::before {
   content: '';
   position: absolute;
@@ -25,18 +25,19 @@
   z-index: 0;
 }
 
-/* Eventos */
+/* Evento general */
 .event {
   position: relative;
   width: 50%;
   padding: 5px 10px;
   box-sizing: border-box;
+  z-index: 1;
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.6s ease, transform 0.6s ease;
-  z-index: 1;
 }
 
+/* Aparece animado */
 .event.visible {
   opacity: 1;
   transform: translateY(0);
@@ -54,36 +55,36 @@
   text-align: left;
 }
 
-/* Círculo en la línea */
+/* Punto circular */
 .event::before {
   content: '';
   position: absolute;
   top: 20px;
-  width: 20px;
-  height: 20px;
+  width: 14px;
+  height: 14px;
   background: rgb(0, 82, 126);
   border-radius: 50%;
   z-index: 2;
 }
 
-/* Círculo izquierdo */
+/* Posición del punto izquierdo */
 .event.left::before {
-  right: -10px;
+  right: -7px;
 }
 
-/* Círculo derecho */
+/* Posición del punto derecho */
 .event.right::before {
-  left: -10px;
+  left: -7px;
 }
 
-/* Fecha del evento */
+/* Fecha */
 .event-date {
   font-weight: bold;
   margin-bottom: 10px;
   color: black;
 }
 
-/* Contenido del evento */
+/* Caja del contenido */
 .event-content {
   background: white;
   padding: 15px;
@@ -91,23 +92,22 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
-/* RESPONSIVE para móviles */
+/* RESPONSIVO: en pantallas pequeñas */
 @media (max-width: 500px) {
   .timeline-container::before {
-    left: 8px;
+    left: 10px;
     transform: none;
   }
 
   .event {
     width: 100%;
+    left: 0 !important;
     padding-left: 30px;
     padding-right: 15px;
-    left: 0 !important;
     text-align: left;
   }
 
-  .event.left::before,
-  .event.right::before {
+  .event::before {
     left: 0;
     right: auto;
   }
