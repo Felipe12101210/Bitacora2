@@ -144,6 +144,8 @@ ul li + p {
     }
 
     .timeLine-h1 {
+        
+        position: relative;
         font-size: 1.5em;
         text-align: center;
         padding: 0.5em;
