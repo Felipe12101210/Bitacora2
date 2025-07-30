@@ -216,6 +216,77 @@ nav ul li {
     padding: 0.8em;
 }
 }
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    h1, h2, .timeLine-h1 {
+        font-size: 1.6em;
+        text-align: center;
+        padding: 0.5em 0;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    nav ul li {
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .main-bienvenida {
+        margin: 10px;
+    }
+
+    .main-bienvenida p {
+        font-size: 1.1em;
+    }
+
+    .component {
+        flex-direction: column;
+        padding: 10px;
+        gap: 1em;
+    }
+
+    .main-component,
+    .reflexion {
+        padding: 1em;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+
+    ul li + p {
+        font-size: 0.95rem;
+        padding: 10px;
+        margin-top: 6px;
+        margin-bottom: 12px;
+    }
+
+    .button-canvas {
+        font-size: 1em;
+        padding: 8px 16px;
+        width: 100%;
+    }
+
+    .preguntas h1 {
+        font-size: 1.5em;
+    }
+}
+
 
 
 .preguntas h1{
