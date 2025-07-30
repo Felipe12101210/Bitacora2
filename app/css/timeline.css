@@ -82,7 +82,12 @@
   padding: 15px;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  word-wrap: break-word;      /* Rompe palabras largas */
+  overflow-wrap: break-word;  /* Para mayor compatibilidad */
+  max-width: 100%;            /* Asegura que no se desborde del contenedor padre */
+  box-sizing: border-box;     /* Incluye padding en el ancho total */
 }
+
 
 /* Responsivo para móviles */
 @media (max-width: 500px) {
