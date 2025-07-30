@@ -132,32 +132,91 @@ margin-top: 8px;
 margin-bottom: 20px;
 }
 
-@media screen and (max-width: 600px) {
-main {
+
+@media screen and (max-width: 768px) {
+body {
+    padding: 10px;
+}
+
+.timeLine-h1 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.5em;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+.main-bienvenida p {
+    font-size: 1.2em;
+}
+
+    .component {
+    flex-direction: column;
     padding: 20px;
+    gap: 1em;
 }
 
-h1, h2 {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
+    .component-mix {
+    gap: 10px;
 }
 
-ul li {
+    .main-component {
+    padding: 1em;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+    .reflexion {
+    padding: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+  ul {
+    max-width: 100%;
+}
+
+    ul li {
     font-size: 1rem;
-    margin-top: 16px;
 }
 
-ul li + p {
-    font-size: 0.95rem;
-    padding: 15px;
-    margin-bottom: 16px;
+    ul li + p {
+    font-size: 0.9rem;
+    padding: 1em;
 }
 
-.timeline-container {
-    padding: 20px;
-    border-width: 1px;
+    .preguntas h1 {
+    font-size: 1.5em;
+}
+
+    .button-canvas {
+    width: 100%;
+    font-size: 1em;
+    padding: 0.8em;
 }
 }
+
 
 .preguntas h1{
     font-size: 2em;
