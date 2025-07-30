@@ -137,7 +137,7 @@ ul li + p {
 
 
 
-/* Media Queries */
+
 @media screen and (max-width: 768px) {
     body {
         padding: 10px;
@@ -223,7 +223,6 @@ ul li + p {
         padding: 0.8em;
     }
 
-    /* Timeline en una sola columna */
     .timeline::after {
         left: 31px;
     }
