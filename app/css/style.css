@@ -85,7 +85,7 @@ nav ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2em;
+    gap: 10vw;
 }
 
 .component-mix {
@@ -374,7 +374,7 @@ ul li + p {
 
 .mostrar{
     display: flex;
-    gap: 5vw;
+    gap: 6vw;
 }
 .mostrar-timeline{
     width: 20vw;
@@ -439,7 +439,7 @@ ul li + p {
     text-align: center;
     width: 100vw;
     height: 60vw;
-    background-color: #165c96;
+    background-color: #1669b3;
     padding: 3vw;
     margin: auto;
     gap: 5vw;
@@ -479,6 +479,7 @@ ul li + p {
     .pregunta4 img{
     width: 8vw;
     height: 8vw;
+    border-radius: 1vw;
 }
     .pregunta5 img{
     width: 8vw;
@@ -487,4 +488,121 @@ ul li + p {
     .pregunta6 img{
     width: 8vw;
     height: 8vw;
+    border-radius: 1vw;
+}
+
+.revelation{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    text-align: center;
+    padding: 5vw;
+    flex:1;
+    gap: 2vw;
+}
+.revelation-1, .revelation-2 {
+    width: 40vw;
+    padding: 2vw;
+    border: 2px solid rgb(0, 82, 126);
+    border-radius: 16px;
+    box-shadow: 2px 2px 12px rgba(0, 0 , 0.4);
+}
+.revelation-1 img, .revelation-2 img {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 16px;
+}
+.ikigai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1vw;
+    padding: 2vw;
+    margin: auto;
+}
+.ikigai h2 {
+    font-size: 2vw;
+    color: rgb(0, 82, 126);
+}
+.ikigai p {
+    font-size: 1.5vw;
+    color: black;
+    max-width: 60vw;
+}
+.ikigai img{
+    border-radius: 2vw;
+    width: 70vw;
+    height: 60vw;
+}
+
+.activity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1vw;
+    padding: 2vw;
+    margin: auto;
+}
+.activity h2 {
+    font-size: 2vw;
+    color: rgb(0, 82, 126);
+}
+.activity p {
+    font-size: 1.5vw;
+    color: black;
+    max-width: 60vw;
+}
+.activity img {
+    border-radius: 2vw;
+    width: 70vw;
+    height: 60vw;
+}   
+
+.circulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1vw;
+    padding: 2vw;
+    margin: auto;
+}
+.circulo h2 {
+    font-size: 2vw;
+    color: rgb(0, 82, 126);
+}
+.circulo p {
+    font-size: 1.5vw;
+    color: black;
+    max-width: 60vw;
+}
+.circulo img {
+    border-radius: 2vw;
+    width: 60vw;
+    height: 50vw;
+}
+.rueda-vida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1vw;
+    padding: 2vw;
+    margin: auto;
+}
+.rueda-vida h2 {
+    font-size: 2vw;
+    color: rgb(0, 82, 126);
+}
+.rueda-vida p {
+    font-size: 1.5vw;
+    color: black;
+    max-width: 60vw;
+}
+.rueda-vida img {
+    border-radius: 2vw;
+    width: 60vw;
+    height: 50vw;
 }
