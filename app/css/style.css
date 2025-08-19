@@ -36,21 +36,20 @@ nav {
     flex-direction: row;
     justify-content: center;
     color: #fff;
-    padding: 3px;
+    padding: 1vw;
     gap: .5rem;
 }
 
 nav a {
-    padding: 2px;
+    padding: 1px;
     color: rgb(0, 82, 126);
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
 nav ul {
-    padding: .1rem;
     display: flex;
-    gap: .4rem;
+    gap: .1rem;
     border: 2px solid rgb(0, 82, 126);
     border-radius: 17px;
 }
@@ -84,10 +83,9 @@ nav ul li {
 
 .component {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 2em;
-    padding: 40px;
 }
 
 .component-mix {
@@ -97,26 +95,14 @@ nav ul li {
 }
 
 .main-component {
-    padding: 2em;
+    display: flex;
     max-width: 85%;
-    margin: 0 auto;
-    border-radius: 16px;
+    margin: auto;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    border: 3px solid rgb(0, 82, 126);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, .8);
 }
 
-.reflexion {
-    gap: 20px;
-    padding: 20px;
-    margin: 0 auto;
-    width: 100%;
-    border: 2px solid rgb(0, 82, 126);
-    border-radius: 16px;
-    box-shadow: 2px 2px 12px rgba(0, 0 , 0.4);
-}
+
 
 ul {
     list-style: none;
@@ -370,9 +356,6 @@ ul li + p {
     }
 }
 
-.preguntas h1 {
-    font-size: 2em;
-}
 
 .button-canvas {
     text-align: center;
@@ -386,4 +369,122 @@ ul li + p {
     cursor: pointer;
     font-size: 1.2em;
     transition: background-color 0.3s ease;
+}
+
+
+.mostrar{
+    display: flex;
+    gap: 5vw;
+}
+.mostrar-timeline{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;    
+    box-shadow: 2px 2px 12px rgba(0, 0 , 0.4);
+    border-radius: 2vw;
+    padding: 2vw;
+}
+.mostrar-timeline img{
+    position: relative;
+    top: 0;
+    left: 15%;
+    width: 15vw;
+    height: 10vw;
+}
+
+.mostrar-happy-startup{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center ;
+    justify-content: center;
+    box-shadow: 2px 2px 12px rgba(0, 0 , 0.4);
+    border-radius: 2vw;
+    padding: 2vw;
+}
+.mostrar-happy-startup img{
+    width: 15vw;
+    height: 10vw;
+    position: relative;
+    top: 0;
+    left: 2%;
+}
+.mostrar-retos{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center ;
+    justify-content: center;
+    border-radius: 2vw;
+    padding: 2vw;
+    box-shadow: 2px 2px 12px rgba(0, 0 , 0.4);
+}
+.mostrar-retos img{
+    width: 15vw;
+    height: 10vw;
+    position: relative;
+    top: 0;
+    left: 3%;
+}
+
+.preguntas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 60vw;
+    background-color: #165c96;
+    padding: 3vw;
+    margin: auto;
+    gap: 5vw;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+.preguntas1, .preguntas2 {
+    display: flex;
+    flex-direction: row; 
+    gap: 10vw;
+    justify-content: center;
+}
+
+.pregunta1, .pregunta2, .pregunta3,
+.pregunta4, .pregunta5, .pregunta6 {
+    
+    width: 20vw;
+    background-color: #fff;
+    border-radius: 1vw;
+    padding: 1vw;
+}
+
+.pregunta1 img{
+    width: 8vw;
+    height: 8vw;
+}
+    .pregunta2 img{
+    width: 8vw;
+    height: 8vw;
+    border-radius: 1vw;
+}
+    .pregunta3 img{
+    width: 10vw;
+    height: 10vw;
+}
+    .pregunta4 img{
+    width: 8vw;
+    height: 8vw;
+}
+    .pregunta5 img{
+    width: 8vw;
+    height: 8vw;
+}
+    .pregunta6 img{
+    width: 8vw;
+    height: 8vw;
 }

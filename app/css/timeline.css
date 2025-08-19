@@ -119,3 +119,18 @@
     
 }
 }
+
+.reflexion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1vw;
+    padding: 2vw;
+    margin: auto;
+    width: 60vw;
+    border: 2px solid rgb(0, 82, 126);
+    border-radius: 16px;
+    box-shadow: 2px 2px 12px rgba(0, 0 , 0.4);
+}
+

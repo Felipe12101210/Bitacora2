@@ -19,6 +19,7 @@ timeLine.forEach((evento, index) => {
         <div class="event-content">
             <h3>${evento.titulo}</h3>
             <p>${evento.descripcion}</p>
+            
         </div>
     `;
     lineaTiempo.appendChild(eventElement);
